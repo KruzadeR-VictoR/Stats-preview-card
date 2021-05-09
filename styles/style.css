@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #090b1a;
+  height: 100vh;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #1b1938;
+  height: 400px;
+  width: 1000px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card {
+  background-color: #aa5cdb;
+}
+
+.heading {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 3rem;
+  background-color: #1b1938;
+}
+
+.heading h2 {
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.heading h2 span {
+  color: #aa5cdb;
+}
+
+.heading p {
+  padding: 1.5rem 0;
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.image {
+  overflow: hidden;
+  mix-blend-mode: multiply;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3rem 0;
+}
+
+.statistics div {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.statistics div h2 {
+  font-size: 1.3rem;
+}
+
+.statistics div p {
+  padding: 10px 0;
+}
+
+.statistics div:not(:first-of-type) {
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    padding: 2rem;
+    margin-top: 8rem;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 120vh;
+    width: auto;
+  }
+  .card .heading {
+    padding: 3rem 3rem 0;
+  }
+  .card .heading h2,
+  .card .heading p {
+    text-align: center;
+  }
+  .statistics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .statistics div p {
+    text-align: center;
+  }
+  .statistics div:not(:first-of-type) {
+    margin-left: 0px;
+    margin: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
