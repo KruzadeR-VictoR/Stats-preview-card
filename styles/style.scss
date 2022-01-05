@@ -47,7 +47,7 @@ body {
   //   background-color: hsl(277, 64%, 61%);
   mix-blend-mode: multiply;
   img {
-    height: 100%;
+    // height: 100%;
     width: 100%;
     object-fit: cover;
   }
@@ -75,11 +75,11 @@ body {
 @media only screen and (max-width: 500px) {
   body {
     padding: 2rem;
-    margin-top: 8rem;
+    margin: 8rem 0;
   }
   .card {
     flex-direction: column-reverse;
-    height: 100vh+20vh;
+    height: calc(100vh + 20vh);
     width: auto;
     .heading {
       padding: 3rem 3rem 0;
