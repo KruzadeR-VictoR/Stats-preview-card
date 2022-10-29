@@ -47,13 +47,13 @@ body {
   background-color: #1b1938;
 }
 
-.heading h2 {
+.heading h1 {
   font-size: 2rem;
   font-family: "Inter", sans-serif;
   color: white;
 }
 
-.heading h2 span {
+.heading h1 span {
   color: #aa5cdb;
 }
 
@@ -86,7 +86,7 @@ body {
       flex-basis: 100%;
 }
 
-.statistics div h2 {
+.statistics div h1 {
   font-size: 1.3rem;
 }
 
